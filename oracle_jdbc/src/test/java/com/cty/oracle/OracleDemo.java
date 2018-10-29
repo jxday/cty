@@ -28,6 +28,7 @@ public class OracleDemo {
         resultSet.close();
         statement.close();
         connection.close();
+        System.out.println("ceshi");
     }
 
 
