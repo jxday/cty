@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ame_ssm_service/ame_ssm_service.iml" filepath="$PROJECT_DIR$/ame_ssm_service/ame_ssm_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ame_ssm_utils/ame_ssm_utils.iml" filepath="$PROJECT_DIR$/ame_ssm_utils/ame_ssm_utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ame_ssm_web/ame_ssm_web.iml" filepath="$PROJECT_DIR$/ame_ssm_web/ame_ssm_web.iml" />
+    </modules>
+  </component>
+</project>
