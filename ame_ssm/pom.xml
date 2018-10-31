@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
 
 
+
     <properties>
         <spring.version>5.0.2.RELEASE</spring.version>
         <slf4j.version>1.6.6</slf4j.version>
@@ -138,6 +139,11 @@
             <artifactId>pagehelper</artifactId>
             <version>5.1.2</version>
         </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.github.pagehelper</groupId>-->
+            <!--<artifactId>pagehelper</artifactId>-->
+            <!--<version>5.1.2</version>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-web</artifactId>
