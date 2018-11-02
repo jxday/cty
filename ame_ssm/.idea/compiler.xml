@@ -14,10 +14,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ame_ssm_service" target="1.8" />
-      <module name="ame_ssm_utils" target="1.8" />
       <module name="ame_ssm_utils (1)" target="1.5" />
-      <module name="ame_ssm_web" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
