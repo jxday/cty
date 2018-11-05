@@ -43,4 +43,10 @@ public interface IRolesDao {
 
     @Delete("delete from role where id = #{id}")
     void deleteById(String id);
+
+    @Select("select * from permission where id not in (select permissionId from role_permission where roleId = #{id})")
+    List<Permission> findRoleByIdAndAllPermission(String id);
+
+    @Insert("insert into role_permission (permissionId,roleId) values(#{permissionId},#{roleId})")
+    void addPermissionToRole(@Param("permissionId") String permissionId,@Param("roleId") String roleId);
 }

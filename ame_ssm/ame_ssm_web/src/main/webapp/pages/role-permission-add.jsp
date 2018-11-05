@@ -80,25 +80,25 @@
 			<!-- 内容头部 -->
 			<section class="content-header">
 			<h1>
-				用户管理 <small>添加角色表单</small>
+				角色管理 <small>添加权限表单</small>
 			</h1>
 			<ol class="breadcrumb">
 				<li><a href="${pageContext.request.contextPath}/index.jsp"><i
 						class="fa fa-dashboard"></i> 首页</a></li>
 				<li><a
-					href="${pageContext.request.contextPath}/user/findAll.do">用户管理</a></li>
-				<li class="active">添加角色表单</li>
+					href="${pageContext.request.contextPath}/role/findAll.do">角色管理</a></li>
+				<li class="active">添加权限表单</li>
 			</ol>
 			</section>
 			<!-- 内容头部 /-->
 
 			<form
-				action="${pageContext.request.contextPath}/user/addRoleToUser.do"
+				action="${pageContext.request.contextPath}/role/addPermissionToRole.do"
 				method="post">
 				<!-- 正文区域 -->
 				<section class="content"> 
 				
-				<input type="hidden" name="userId" value="${user.id}">
+				<input type="hidden" name="roleId" value="${role.id}">
 				
 					<table id="dataList"
 							class="table table-bordered table-striped table-hover dataTable">
@@ -107,22 +107,22 @@
 									<th class="" style="padding-right: 0px">
 									<input id="selall" 
 										type="checkbox" class="icheckbox_square-blue"></th>
-
 									<th class="sorting_asc">ID</th>
-									<th class="sorting">角色名称</th>
-									<th class="sorting">角色描述</th>									
+									<th class="sorting">权限名称</th>
+									<th class="sorting">权限url</th>
 								</tr>
 							</thead>
 							<tbody>
-								<c:forEach items="${roleList}" var="role">
+								<c:forEach items="${permissionList}" var="permission">
 									<tr>
 										<td>
-										<input name="ids" type="checkbox" value="${role.id}">
+										
+										<input name="ids" type="checkbox" value="${permission.id}">
+										
 										</td>
-
-										<td>${role.id}</td>
-										<td>${role.roleName }</td>
-										<td>${role.roleDesc}</td>
+										<td>${permission.id}</td>
+										<td>${permission.permissionName}</td>
+										<td>${permission.url}</td>
 										
 									</tr>
 								</c:forEach>
